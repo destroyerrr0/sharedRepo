@@ -1,0 +1,331 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+
+## Text Elements
+Find out what?
+1. Tomcat server
+ ^YEJZJmJa
+
+## 1. Java Foundations (don’t skip this)
+
+You must be solid here or Spring will feel like magic (bad magic).
+
+* OOP (inheritance, polymorphism, interfaces)
+* Collections (`List`, `Map`, `Set`)
+* Streams & Lambdas
+* Exceptions
+* Annotations (VERY important)
+* JVM basics (heap, stack, GC)
+* Maven / Gradle basics
+
+---
+
+## 2. Core Spring (before Spring Boot)
+
+Spring Boot sits **on top of Spring**, so learn the core ideas:
+
+* Inversion of Control (IoC)
+* Dependency Injection (DI)
+* Beans & Bean Lifecycle
+* ApplicationContext
+* Component Scanning
+* `@Component`, `@Service`, `@Repository`
+* `@Configuration` & `@Bean`
+* Profiles (`@Profile`)
+
+👉 If you understand **why Spring exists**, Boot becomes easy.
+
+---
+
+## 3. Spring Boot Fundamentals
+
+This is where productivity starts.
+
+* What Spring Boot actually does
+* Auto-configuration (CRITICAL concept)
+* `@SpringBootApplication`
+* Starter dependencies
+* `application.properties` / `application.yml`
+* Embedded servers (Tomcat)
+* Running apps (JAR vs WAR)
+
+---
+
+## 4. REST APIs with Spring Boot
+
+Most real-world usage starts here.
+
+* `@RestController`
+* `@RequestMapping`, `@GetMapping`, `@PostMapping`
+* Path variables & request params
+* Request/Response bodies (`@RequestBody`)
+* JSON serialization (Jackson)
+* DTOs vs Entities
+* Validation (`@Valid`, `@NotNull`, etc.)
+* Global exception handling (`@ControllerAdvice`)
+
+---
+
+## 5. Data Access (Spring Data JPA)
+
+This is where apps become “real”.
+
+* JPA & Hibernate basics
+* Entities & Relationships
+
+  * `@OneToMany`, `@ManyToOne`, etc.
+* Repositories (`JpaRepository`)
+* Derived query methods
+* JPQL & native queries
+* Pagination & Sorting
+* Transactions (`@Transactional`)
+* N+1 problem (important!)
+
+---
+
+## 6. Database & Migration
+
+Production systems demand discipline.
+
+* MySQL / PostgreSQL basics
+* Connection pooling (HikariCP)
+* Flyway or Liquibase (schema migrations)
+* Indexing basics
+* Handling large datasets
+
+---
+
+## 7. Security (Spring Security)
+
+This separates juniors from professionals.
+
+* Authentication vs Authorization
+* Filters & Security Filter Chain
+* Password encoding
+* JWT-based authentication
+* Role-based access control
+* Method-level security
+* OAuth2 basics (Google/GitHub login)
+
+---
+
+## 8. Configuration & Environment Management
+
+For real deployments.
+
+* Multiple environments (dev, test, prod)
+* Externalized configuration
+* Secrets management
+* `@ConfigurationProperties`
+* Feature flags
+
+---
+
+## 9. Testing
+
+If you skip this, you’ll pay later.
+
+* Unit testing (JUnit 5)
+* Mockito
+* Spring Boot test slices
+* Integration tests
+* Testcontainers (very valuable skill)
+* MockMvc vs WebTestClient
+
+---
+
+## 10. Observability & Production Readiness
+
+What actually runs in companies.
+
+* Actuator
+* Health checks
+* Metrics
+* Logging (Logback, log levels)
+* Tracing basics
+* Graceful shutdown
+
+---
+
+## 11. Performance & Scalability
+
+Optional early, mandatory later.
+
+* Caching (Redis, `@Cacheable`)
+* Async processing (`@Async`)
+* Thread pools
+* Rate limiting
+* Database performance tuning
+
+---
+
+## 12. Microservices (only after mastering basics)
+
+Do **not** jump here early.
+
+* REST vs Event-driven
+* Inter-service communication
+* OpenFeign / RestTemplate / WebClient
+* Circuit breakers
+* Config servers
+* Service discovery
+* API Gateway basics
+
+---
+
+## 13. Build, Deploy & DevOps Awareness
+
+To be job-ready.
+
+* Dockerizing Spring Boot apps
+* Environment-based builds
+* CI/CD basics
+* Running on cloud (AWS/GCP basics)
+* Kubernetes (later)
+
+---
+
+## 14. Best Practices & Architecture
+
+This is senior-level thinking.
+
+* Layered architecture
+* Hexagonal / Clean architecture
+* Exception & error design
+* Logging strategy
+* API versioning
+* Backward compatibility
+
+---
+
+### Strong advice (don’t ignore this):
+
+* Build **2–3 real projects**, not tutorials
+* Read **official Spring docs**
+* Debug Spring internals at least once
+* Learn **why**, not just **how**
+
+If you want, tell me:
+
+* 🎯 **Job-focused or backend mastery?**
+* 🧑‍💻 **Java level (beginner / intermediate / strong)?**
+* ⏱ **Timeline (weeks/months)?**
+
+I’ll convert this into a **personalized learning plan with projects**.
+ ^zRB35p4m
+
+## Embedded Files
+b5501fdb331b8c535d6ed061473ab4574143a581: [[Pasted Image 20260204060655_905.png]]
+
+bbc0268a939da7365e0e74842a48c2cdab206a45: [[Pasted Image 20260204060655_942.png]]
+
+fe6494b24dd43f68f8c6abc172adf92bfbabc280: [[Pasted Image 20260204060655_955.jpg]]
+
+%%
+## Drawing
+```compressed-json
+N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAA5tAAYaOiCEfQQOKGZuAG1wMFAwMogSbggATQBRACkALXr9etx0sshYRCqoLCgO8sxuZwBmeIBWbQBOCYAWADZE+NHp
+
+hbnEubn+cpgR+LXtUYmFhemAdhTEngmDidGdyAoSdW54hbiJ6enE755pg7THh8YqQSQIQjKaTcc4TR4QazKYLcFLw5hQUhsADWCAAwmx8GxSFUAMTxBDk8mDSCaXDYLHKTFCDjEfGE4kSDHWZhwXCBXLUiAAM0I+HwAGVYMiJIIPIL0ZicQB1F6SbggzoQBXYhCSmDS9CyyrwplQjjhfJoeLwti87BqPZWlKo0EQRnCOAASWIltQBQAuvCheRst7
+
+uBwhGL4YQWVgqrg0ibhCzzcxfRGo66wghiG9RucVhNEokvvDGCx2Fw0Mcy0xWJwAHKcMRvOb/eIpc4LUuuwjMAAimT6ubQQoIYXhmmTxFqwWyuXTkfw8KEcGIuGHb3Ol3ec1GPFG62trqIHCx4aX8MJ9Jz3DH+Anrr6mAGEgAYjHiKhhFBUBRJBuAD8AA6HDxNoqAACoGHgv5hKQ5agYK5AUJB/RVB+LLfkIv7/kBoHgVBMEbqg8GIVwQacFA4qE
+
+EY4i8C6mpClRb64PooqOqgcJPv0ACCRDKFW6DBEKAy1qQUDmAQ/GQkJ0C2oKei5LgMZMGGaAZsurpEpCMYEGhL4YZ+2G4QBUAgWBEHQfosGkUw5GCrgOFsAASuEtH0RiQgIFeqkABIQlCr6oOBNzFAAvjspTlJUEhGC5ABCxxwHM+iCt09HQOh8LDGgzhLNM2g3Dc1wpN87wPK6nFzCsqQrPEsJrHuEzzOc8LPMQrxoN2Uy3LM4w3PC4KQtCaC3L
+
+C8KIgajHlNqOJskSpKUhSSCTnSDJMiyC0cugXIcDyfI5GJroimKeoGlqBLGlmGI6iqnVqmgGqzbdOLnZlRq5kmfiSKmvrHpqtp0g6bzOvC7qrt6voBkGIYIOpqCadGsa5eguDxMh05/RemaatmI4hfMixnMc3GauW9ZCSc4mU02HAtlaCzbgCbYHNGA5Dreo7jj5rpTsyM5zkdi64+Uq7rpuVrbik7zzFcvxtSebA3gT96Ppqz7BRAJIkiFEFtPQ
+
+uCoG+04bpWzCoAAFMQnCAJgEcFYoQcCoOofYAJSgaB1TCKg+hCOiqCaAgpFXV+4KBN+pCoOKcCkDGyh/qK+CoEKCBBKgRA4r70TmFbtJfvoOfYG72iexwABUqAAPJVwAClbMbh2o1hiNQqBwASMD6EScCSH2+htzGfSkGOYjMB7FeoGywTYJJnAW5bAAGAAyfZQIvbeLwAsrgcAb6gi/igg68T5XkqBGxFsAGSoMvbGaOuzCgZXtQ4AgcBz/tz+o
+
+LxHAcGwURP4LwAGq1BctUVAhB9AdwktYKAp9UD1GAVvQOoRzAL3BLvNu6J1ptwAOK4gQTvRgHBUAKFQHg8gxBgioNYNgJ+HBQLOGYWXHWvAIL4gjjHOOHAE6WyDsxLhsd46oASmwABE9QLcJEWIgBpE1AW3LuXTgLtbTfiFNHYRvClHYLYBnEIpBSHqGDnoCOJAQjyDLpXT0HAKaVnUVPKimJk6W09GwQh39ByIFjPTGAqAbEACsECz3sZbfsnoE
+
+EJRCPtVAN8onWFvoQVO2AYDYGCN/XicAfBSU/viXI/Rv74mgZwI60c8B/3jt/ReAABIpHdzS5H3jUo+CFzAICadUtyHdWBQCJDAReVTamcBFMoEQZtOCL1iQfap8SOADMnrXTEp1whWxqYstgyzF6SI4IAXg3ACSO/4jRMAfYCzrFELCSj/x+Okbw1AWA17MB0aI8Rv4g56GyBbCxMBS6MJcCw35bDRgQRuQnWRv43wCzYkdccZdIJ9wtn2P84dg
+
+6xzYMQIQISzCwFIlECSzAfnfyVGZTRPDQUvNQHSKAQgCD4D8TbcIGTnLOCUiMsZn8ra4hcp6SCnpcS8WXqgJSYgP4IOaVo5QYLMnZNgpWeZZ9cXD1QMQd+ORlX00IAyyei9d7SvGRwbQqLEASQ1cwSZ5DtVZKIDKzg2gu74DlagWo+gg7EGVV+MidYrbWVggglyzIOAiJ1QveovEXKoHoBbJUobtnMOcKw3WcwIIuVqOKSCP9a6egts8dQJKZEvL
+
+LlvNgAcL74GcBQIk+Avz+2iMHHBeLUDIoJVqzp4QoB5NumKJgDqaluQAI7eXRDvLJ8cOl4OPkOuAI7N7VNrkWqAE6R3f1rhuSQ4a+RWE0MEa+qBAj9tbe3Pkl9v59oHVABQbkeTz2DlORwKyl4tr3eiMRxB+kIPqOKKuDY7JxwILRPVVs2j0kEBwBB/ZIJVwthGx1uQ1Amu/sA39EtQk1IQx4DpTYoANiXPvY+2BtAILwYSWkyc3Dv3ZQBFkp4+E
+
+1Pbc44IpBeLEDMGILZZdY3xq4hBfsG4ja8WwGPBeILUDcaiIg2uvFtlwsRYi/8TBg5BsDsEgwwdAA4BCWwAuARNsrvUcTUy/KECDoYjc160H0O/rUGDkkVk3zcvgPVzA+5yDLqgVAlcalV3NNBHeHB+nTu8zAaCHn2lt1wz8yuXSi1qB0nexe9ReQRZ6X01jk9Bxx0YF+PdpA/HZHUGihh2na4AEUBU3w4GbRgqBMtwYWTnMr7Kb7iiJJJXh39IL
+
+kH2pS82qzqlte5J1zgBBkuVwbAAaniO3TEm6sgN2KbA3IABCGN/zQJsIWFxnjtIwhTK3pCcgn8y7rPRSElRzAYDoiyBbZVhcsKOGYPabJ5otOoC3jAcUxWyGoFneiRkup3ubfQYUzg5pjukI7ldW5lt9NYnXbiWuCC3y0ooLgPxRJEn9oM6EYOls7vgkLr7Xb9mEE2OVZgER/2zOTz8tYahIi7OkGUMHCWmO8hseWxwNh5xgXBJEA6K2Qmj7YB57
+
+AST8K7K8j2ysgJzJ2AsBTpifQE2NkWkrOOJ7vEcLghg9a0hUH1e5bjkYPV38Pz4GHtugXQu/Em8VbiACMYl2hGYOW0gX4ch6EcC1ye9QlSQWcJtnMFKNdHRyZWY9BIEB+8x1+OkAnBVOIJN/Lex9JBoucMERgycwiC7jrAb+Vc9eSB4LQ9BVs8HiKRAgBQeC1B+S0BnNg/gltxoBbrZIjiOCsr2/Ym+FmzCYg4POX83ma2D7LibKOJalXv0JF3YW
+
+T2t6Rkkj4YOOQ++cEHwvZV9A259HRG3VFxAEGv2HmVogdEvwsshGy0Pk8BeBDyNnMrDPR/NryZ3vV6yjVWdNcbkIVKI5Ch2bKAMJMJs5sKFRQStqVK/KehHI+zMCOzOyuzMBtzHJCC2xigHp+J2bDxPYACqAav4u+zWfC9QBBagXERCysjsvS38QmYKLs+6zAVqmq1i+SjI/6xB+WkB6ISkUQqksuls5YfihsvguAU2pEjsYoVB9IW89A2A4akaC
+
+AmgaE6IuIRAR0rOzeK2usHYEEVc9g9k4hoovON8h2GK7KbkuAHuFoZcRKJElK1KYofipAzICKpC7yvIAa4Qaus81KvSpA38AUBAOa2A4IQGiex8ccFOlcy8De/gfCcRygtI9IbchICc6eQQ48rW5A9oty5O3BlCdICAQokYpEGgUANsFAvyoB2h7OuhhEtcTAgi12YgUy4o7gxhRAuevyVcH8KuJGfItKbc12EsfSGcxmpAT2uIdIfcEObkt206M
+
+xYRIQU2Q2P8p29MiuAmIi96vEmx2A6xcKF8X4YOD4x6xmGcUCsGnulcIm4hmO7czRRIrRwcVKAanutRHG8QcQz25gmIZEbSC8nAtKFKokTA2c52pKxe9C2y/YeiSi/8UASiqAUu0CDacmdyQx3yViqAyaqaihjqJCUAzgZAhAJC38Niw8zggJbR7yfsAa2uee3ib4gUpC5CF6UAaE0COBwc5CSoyh6hGquQhShAogQgFBmgF8OILAgOHekI36FMd
+
+B9kbSSqfYegwhGSGaFCxmSOfiBRWh3xQKoiEplabcXiM+Uyg49AfRFsvESO/Ithvy0EimqJdgzgJxOJvydx1BTAtEIi9B5KQa5mtiYp6+R0keYQX4mgppPohSnoCguI/YMJ3BfqFStyKiaSwgX4lsvESo4oVesOKZCCAA0loEwOaLvlbLyaQE3t8YmqIvuosp1mPFMrxKIH3H0H4YELCqLoimEAGkSGnggBni7HMY7Lwk9nfDAHJtHh2WoMEv/gg
+
+EEVgNEANsnOQuodEhSvOV2UueZm/P0SojfEwJiFHMqqwIJN/EkQkTihLsoDAFqZ6OGnWJWNAZXAlOtA6RfgYLyJJJoCYT0V8S3rrOfJwAnNYcxljjbBwPbJAoJESG8fCm7MgLiQlLGa5uXDwIAMgEowO6IQycqKQSs8jy5cbcSJLszkP65xk8VhX4SiGyIo9oBAuatyNs9CSiniyhfgrFCcQ8FZ44FKv4wQoQv4zYy5k8y8BipClykgMATyFFUuA
+
+cSiKeFAnFMBcBQgf4cCO+QQyc2QqF3pqAgAPBuAD1+5hfUO6cxILlGZHKgjeFhIXFCTAIBOpZXIAHwbgAi7uACwBDsoAN07FluAhs+io5/CCA/g5oUc5C/FpA2Qjglx5C2ovCbsrl5c38gAj8SYWQRQJBCqRWwUBpxYgRDdy5CSDjypVlyegYHJxKTlhEF9m5B6JGxKJGrAa/rn76J8gfEJw+AJLZqrpEWLmkU/LISUAGRaxsKEQGxGwmyQpAJWw
+
+wVwUIFOxjnuxlzexaV+wBxBwhweAYkRyo5CbPCYGpzpyZzByFyqAKH8LWHZxXUly4k1z1yWyNx+nnKtztydzdykC9z9yDz5IjzFHZGTzTyLldZLyrzohNJDpNJHwnx0EYghD6Dbp3zOqPwHnCpAIZJ/wAL2ZWygLgKQKzbnLwLfxIIoIFFWyYJwDYJRCpEUIeKTzEI5AfZFHUImZ0IgF/J1FsK/GcLBxCZhWCIC3irPISJlyBlyI9KKLKJGJqIbK
+
+8VPKCCdWGJjkmKIWQLKqhCGWUm2KvkqIK20YEhWxuKM13Eqo+IpL+IcDEXsphIRLfyzLbqzKJLJKpLpKTxSpWp6rtoFIg2/klK5BlLWDdWDJ1KB3rzTotJQUdIJZRZZbdpDLymjJd4TJTI1KzIOrrLLILxrJLKijtLbL7KHKoBoGoCnIsDnL0XlxXK8V3Kk7oikVtwMFvLKafKhBenAU6GoDGmS3gqQqD4wrOl9lZrIqK5HaSRYp+J1p5BPb2G/h
+
+90Up+E0p0psCsE/xMqX4p3/qWycrcq8r8px70xkairVIgqSqWoh4TII18iKrKreJqr2jr0Wq6qfwGqYhf4mpmoHw6re1v12oOpOoupuqKmeqWzeobi+r+qBpZLBqhqElRouR1kt6oANn4lpq8QZpZpqCrp90Fpzr4UEBloVpVrMA1o4q30WyNq4k9qtpG2dqkCJ0nqtoLq8Kjrjo6pTrTJfbzqcNsMO45qGw/pTbbq7qnoHohipkICPpnoXr1JbY
+
+3omrdbMNPpoqvpk0fpfrwRWBn472AZFWcCgbgaQYWwWaSTf7waIY70oaIboYAJYZig4ZQB4YEZEYsWkZHmkIUY04Q40bx4MOMYx3IPd1TDCY8Y/z8YWh86i33FiYSa9nSaj2YkKat3ZCoBqYEWaa4k6a8R6YGYCV9ApkhnmNKM2ZBD2aOZc0uZubVJBZebWC+bTL+aBbmhON4bHrvyRYBFKNLxxa4Bx0BHqMpZ+npaVbeRZa+zJ55Zk1FYlaIzlb
+
+BxVbr3Lr+D/oNZNbvlQTtZkMg6509bbP9an7rGjbjaopTYK4vXE1wKLaGkoNrZhNRD+7bYE77a/LmEg6kRnZ9DI1T6jFql3ZOyngIDz6vbvbkI8M/ZvYCoGn+1/xg0qJnG7FQ4w5w7G6I7I52Wrzo5PPY4rF47sQcFAJE4oxk6mbcFU6Ua058gM5Ko8ZhAs6/LsYoOc7Rzc455+KWz85ssOgi79nvyHpVlS6Dmy7BgGCK6pxpgDH4q4kF7B7a6Ek
+
+F46SG6vOVzW6eoNbcvYpqtRy24qRGXLppjO6u70xoqbPe6+7+7R5B5a5G60Xh6RkB4x5RN8HOKRG5bEDDmjlZ6W554F5F6U2Wxl4N7BBV41517pExjBP1GoBt5v5X6p2kI96hn96D7PbWAj6aG/Lj6EPJz30z4b7z6L6Asr7JvhkLgLUjm6V77j1H4vgCVn4B5b3X6cDKnYD34WzXYZsimv7DLxsf4f1MDf4OqskbgiDByAHRBc1Mvd0QGqEkGVW
+
+aWSErXIGoHCDVVYETG4G4nkFEFQEQ5kGEGUGJ7UFRZ0Gi0MHEGkQsHcFUnhUJuMGN2tatp8F6tgPCFrpiESHLXSHHuyHyEIPKFztCmZtd3Rt6HVyGEIRdGmGfaYgT32J0WqRph2HEqOEr07puGQIeG/nWAmq+FUobhEgrkhGrorERFM1REA6SXxG7FJEpFYhpEN4hVZEIK9Z5EJwwuVxFFiClGZ4VFVE1Hc3fGNHPGxUtzBwNadEAXdGPm9GePuP
+
+YkjHU6EcTM1nTGzG7ELF9hLGzGrHBDrH7EwBbGoo7G+PVKGf0xHGSAnGfUEipmXFEDsTzspYbaPFGotHieUWh2MtgG6G/E7ZttFoqmtmWwgl+K4DglRxOXDykuc1wkInlxIkolonOxj0GK0pPboOEm1DEmklpY5C63Um0nq36AMlX1GV9E5CsmyQfacncm9WFP8mCkaHduVy4himC6SnSl1hykjKgOym37BeM7qlsCame3al4K6kYswugeTXGnoW
+
+ijEDmnT5sB+I3zWm2k/wOk5BOmgQuk7UBLumelPbwk3gG4BnntBmwMhlr4D4RmWuByxncG4gJlJlFO0XQMZkeGEhCA5l5kFkEL1wFGlnlmGLHx3o1lRuTUNlRIBzNkhKtk3ztlhELndkSV7cj12TCuevpyuxnjxxTnI6zk7ko97ljsrmYBrmn4fZbkJJ8ik+Lnk+TyvyY3d53KkBnlT6XlGU3kiIKjGYPlPkvkVicCbOfn0jflx7QJmzScOi3M6G
+
+gW3S3KQWqnWx2y/iyQa3IEoVoUYVKI4V4WT6DUkUKVyJUrdND3hYhDV2MXmA6N13sWkVcUxkJxCYxWn4WwkQiUBziXXnSWYVXKm+/hKW/gqVsBqVpUaWl0+xI65C6WYEGW4lmUWVWXKz+wB6o70eqqQnDwuVuWoBeW+UBVKLTXMcuJBwRUQnRUA1xVWCNd3ngUpX5+ZVKLZXZBAv5WFXFVURlVN+R+gRVWYG1WDurXuG9IUqYWtXrkeRfgiWGIiK
+
+9WkL9WK623DVISUS5A0R0TqgzSQDMS5CsTsS0rcBkzlCawySCRVAiTHTkyDtST4AX9yS9JwCKRUSvukAIxIzaRxyrP4DjWki6F9YQVGaqbHmpq9YKDsZdshXWo+wtqryWtKHH2rBxDqotY6snFOrJxzqd1XODdQLhFwHqFXOuA3A4BNx3qPkT6rSm+q/VmAA8LDsPFHjhAEEoNXZqskhqR0D4MNTeHDXWLnwkaKNe+OjWZ6HksantHGoAnBoE0IE
+
+UCGBCTTfTIIUyVNEIDTQob00CERCIKizXIRs0aEM3ITigz5oa1BaAiQwZd3Fq/JF60tTCiomf4OIQUStPRHPyMTgg48ZiLWpYiMo2I7EBtDRPQxNruJQMFtR+n4kCTwtSE9tSJNEmdrblV4btNJBJUrhe1yuvtF8IDmKQNIF65SbzjU3DrpCOk0dNpLHU6aJYE6YdXttvU/iTIb4GdaJFnXzpbpus2dAusllAjF1YC0fLShXRwQXIa6clOuvckbp
+
+PIW6SmD5FiVOxNpp20bXuqYP7osgoUykGihj0SZIpMSB+CwuSV5wz1pWRleenXQYJodnCSqNetwT1xsBmUZQ5tmEL3o8o+UAqIVCfUGTn0XkiQ7XA6klC30IS99VVG7mqxuZf65Xd+raDv7hBv6L9P+pWFtT6B7U5mZ1DmBAYepBCEDUmh93TIQVYGAGeBlBkQZQ8E0SaFNBgywaJwc0eDX5IWmLQEViGpAStOXTIY0tNhSAp7LQzUL+N6MTDaRq
+
+elYbKB2GvDYdGw2nQ8MORWdFdGumEb1Cb4YjfdOLiPS0U2Rrac9OEHkbXpTWMWB9KemfRDNtMmjb9Doz/R219GwGIxhBmy6WYfhqAVDCQGsbVIzRxAOxphmwwhZnG+Gb+IRjsDuNhB9ibxlRm6z0N6MgTAodiM4wPNeMkTNMNE2hKxMcmvLBFEkwjgpNhhqmDTE9hyZ5NDMdWDmlRxfjGjrMeJcpkAkqbOZXM0yOpmwH8wdJmmbAILG0zCzZjuk8
+
+dHprFnixFD466o4TCMwDyZZssUzOMl7lmZTI6s5JRZuMxNErM9I9WaOBs1uJbM+sLA+9L1g6wg5BsCCE5ornOYzYZB1zf0fc3uJPMb4O2QljflAjvN2Up2c7D8yuzU5/m92IFiCyhYfYIWgQG8Zx3bzA52UiLCHMizjiw54c6LFHFHCxYSkcWOOLIEbAJYJtgabBEnLF3TGoAKWPjDItS0Zx0tj4U7XzqgBZYW52WoYgMpqxgCRixcArSXNLiJAW
+
+xRWCuVFBK0piq4ZW1rSSPK11wa4lWtrVVqKDNztFsJxsZiRCV1b24ashrIkMa3dxmsfcDrK1sYhtYqs8S9rB7k6xDEusE8FHd1jj0zzYTfWGuf1mS1Lzl4Q21eKALXk0D15G88vaNrG3OH3sk2t3VNsPmfwgcOA2bSfHm1W4FtcSC+U3MWzuSls7u5ba2JWwfZQB98cHWtifnaqNsTJjE1lm2yQmP4u2UAUocnQuGf4gRP+SeCOyXIpwgCyEnmrr
+
+FnZ7tlAC7doUuyQLwpV26BTAryGwKTF8Ch7YgrsQPYUEJgMhGgmwDPbQkL2TBa9oVzvacFW03BOdi+wEILx32ohalF+ykL4B6pchBQpiMA50MWu0UnzhlJCgpB9CkHQ2LL2xRmE4OawlRIhz+gocHCy9A4a4RiQxgpeXhPDjK2XoBFiOpuUjuESKputoi3BXnhDjo64J9JZfMCZOPY7vcuOuREomUQcw4QBOhkyaiJxHgvFPOknAgNByAocA+in8
+
+BTpSJgBKdZhgzTdkwHU4o95iOYbTtMmWKYI1iCCCzgoRM7K4zORMqzjZzOL2dCmjnG4jlJc6PM3OonV4l52gKzc/OEEALgCSG7AkOAoJCLoqmi5+l8iZLeLphSS6VwUuSArEojMy54jsuuXMkhSUni3tSANJIblLzK5MlJ4lXGyWyVq6tp6uvJD7AKU0DAdWuU8DrhKVeTdcBubXMof124L5C2it2DUkwFk4JCJuU3fUmS2Bm6F5usZZbj4FW5Wk
+
+Rym3e0odB2nOk9EB3I7tb07opZfS53W5IvWDLM93Jg+YSY90W7PdXuyZR8WmW6rfhvu2ZK2P90LJA9RZ38MsimPB4LxIefskKDDybK5EaJWY5Hp2UZ49lh6SwgcjLkUmrV8ek5XEtOWJ709O5aPCnlTxYqbkRKpCceaj33JCDWex5dnpzwvKyRryNHW5Pzz6CC9xuz5LwVkNERfk+QP5aXv+UAqyd2ZivfvBBSYyq9FqGvBChHG1461J4C3Kkfr1
+
+wo5sV+Q1IPpRQt40Uret1BikKCYr28hMjvfPoOBd5113eglL3hYjErH0/eXVAPnJQAUh9MKqldSgP0Xax9fJjBBPggHfmVxk+JfVPjZQz5Rws+jlUSu7IqqTxC+/lQKsFUyLl9wqMYSKh9hiq18EqDfZKkwsrgt9y4bfXKuaE74IAiqCgEquoHKp4KOAg/GqpwDqqj86BTVSfnWGn4dVHBC/OzEvxwZ/yTe5cEapNGcgXoPI3ALyLzE1BAsAoI0Y
+
+KKFAmARQoovYAmDUFribo2ARgPBJBBLJMBJAuIaoMoFqCQQAA+pIEghCh0o8ATKFAhrSChUYPAdYGtk2A1QJgNwOWB8FP6QBOIzgHgPLG0A1R9wMsAqANGehPBVQ3ABYGDFdDDQgo3AOYHUs1BTR6Iu/LUK9DxAEhFonIbZuLiOiCh6OEMLaD0p2jQB+lkcm/uUFOgSgpQH0UOPKC6X3QuovANEF0vehVBPomMH6NjCtA2g7QIMJ0B0ohhegfQhQ
+
+QMCdDhif9LwvYFGPGB4A7KUwFoHGFpDxhpwCY3Yb4J2HOAHgaYlYE/gDHKBHy6YDMXgB2B+CnBrgQKyAH2EHDBBJYKcHmJOGnCzgsgwsV5SuDXDGYCYDUHcN2BKWHhtgJ4GMOeA0i3K7FvpVWMipuijtfQEAB+vHEFDLIEYEATQC1BlhChiAmgUYOME0CJBsA9wCYMQAWA5gUgCweIHMHOCjBxCcwCYOcBqh7hcARYDGGiHcD0QignQMADCu1Wgh
+
+LlmoQLi/3JVihXFxQaKLCo8VEoNg2AXtEKGwBChaga4ZwHasSB/x+wIS2JT0AkAJKGcSS7gPuEODpLJgWS5pTkvhD5LClxYYpSsEKXvBfgFS9qNUrQBdhFpxYNNemvTVDRAoo0VBjwESCTReE00dZYqG6Xshegky/kNMppDrQRlrIMZeWu5ADKBQQYJOJsplCLLi1d0JNWspuglq21hoDta6FNC/QXl+y7SIctgCgwTlTIM5dDH1UzLrlBML/pqE
+
+/BxgJAuAUYE8uIB7LEYFK2aB8phCJBOwiwSVdMH+WcBAV56jgKCvogHBDwR6lIPmHZjwrwe1Kh8LYvKD8wWQaKjfJitdDiwcVW4fFfMBWBErfIZ4P9ZSpVh3gaVeMQBP7CqCMreEzKguqys0CaBsAKQFJYkFwDTBVg64aVd2AQApAEACqzYDwFwDWqeA2AdcJoEKULBKNEweUOqsKCghtVjwXVZ0HnWQBDVry01WUHNUVAPFwCOAM4BSBGAsQ8QY
+
+BEICMCJBa4hAaYLXAoC9oXIRnNgJ6viWXVVoroZJRcHAhBrMlLUUNYNCqj7AJVi0kpbGvKU/FKlEADqKspTXaAM1zm4sFmscVNK81BaivCiE7XzR61fSxtVMqGU1rNodastQFv2hNqq1woVtfMq2WDq4NJalZY9B7WJadQ/ay6HKG+hmhR1IUA5cDEnXHLwYM6qGBcthhQoblosWFfcvXVzAt1O65dfuq5ghR6NywNYDwEVi38ReVMGFQwH1rXrx
+
+KW4SVacDmBrBclFQDmAiua1qwP1NIVFULAXCQaxY2KxFXirKUgbeV6wcDWSt3VVaIA14HEG+vVgvQ6ViG1VEypbXBBWVqcdYNMDmB0a5grqPcEKCWBCgBVDGjDQ1Ao3EAhQQITQEKFpAYa81iYLMCxrQCarOgOq+IHqvhC8bjV+ACKOAH1UIgskbwvoNwGijQBccmUASNCB2AMANUFAcXhtGnDbRSQ4CinTEvx3Z5K1nob5mBT83hb0AZIFaFSGp
+
+0iBad3zYnbWrJ0RaDolawYBABp1HQ6dWQE3HMv1ALKstxQIXRzpF307ll3a56LLo57y6sgDO3UHFvbXS7ygwu3IKLv0AuRhAOWtMG8HZ2q79d3zPogVs4gdgZoKuznWLpYhsQOIJ/c3Y7v0AmxN+Vip6Pbr11QADd41R/lfxKLTKHdau/QG8IkjtlMQsmawktvD2W6sgFmYgDHvD6YIPFfIWPYLv90G609qEOJVUFC0565dSez3XDCN0GhGtWoQL
+
+mKAAAarYJIAkC+BlQaolwC4Pjrux0ZqgIwHgKNsWnthFgawWpSquV1GBxEaUNAIJsGntLtA9wFILcBcVlBIoMu3Pd8yN0Cwd1EAYvfjsZAkAt+9EQpbvrjjEBJQ78N3TLr33EBC0yqCzOIWCBHaP1boE/bztQCCaxElaIvckVwCWweADUNuH/rajgqgDi0uqYKDcijI6cX+2kL/tGCoheAcBgA4gdQCgG3YEAfjTxtL3UQulcM82AnuDBQo3IsYU
+
+lBjtdA5B79zWmxbDqIBGqXYrhWbRADKzZBrF9Bm0DhCBYsHvI8IQuKQBlINgoUnBhgzwZlJ36psBMGxRgYgB2BV+4oMrHABv0IBRDD+mDe+vx2dZGA0EAkKQY1iF6ZQmQEHIpH9i9J9AkEXQ7treXlADt022DQuoMBHwZ4n8FQ8dsgB2Z0QfGSeggE0P4A+Ny+/HbdgoPJD50OQIQE4YQDgAV9e/Aur6GADhQQA4UIAA
+```
+%%
