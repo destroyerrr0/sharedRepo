@@ -20,6 +20,533 @@ Overheads ^17OxVSmO
 1. Prepare ubuntu
 2. Start measuring overheads one by one for every protocol ^XSPjXHDc
 
+Good — now that the proposal is submitted, the best thing is to follow a **clear execution roadmap** so you don’t wander or waste time. I’ll give you a **complete step-by-step plan** that covers:
+
+* project implementation
+* experiments
+* measurements
+* analysis
+* research paper structure
+* related work to search for
+
+Think of this as your **project playbook**.
+
+---
+
+# 1. Understand the final research goal
+
+Your project should answer this **core research question**:
+
+> **Where does performance overhead come from in different network communication stacks (TCP/IP, REST, RPC/gRPC, QUIC)?**
+
+Not just:
+
+* which is faster
+
+But:
+
+* **why it is faster/slower**
+
+You will attribute overhead to things like:
+
+* kernel networking
+* serialization
+* system calls
+* transport design
+* user-space vs kernel logic
+
+---
+
+# 2. Define the stacks you will test
+
+These are the **four stacks you should benchmark**.
+
+| Stack   | Layers              |
+| ------- | ------------------- |
+| Raw TCP | TCP                 |
+| REST    | HTTP/1.1 + TCP      |
+| RPC     | gRPC + HTTP/2 + TCP |
+| QUIC    | HTTP/3 + QUIC       |
+
+This lets you observe **incremental overhead**.
+
+---
+
+# 3. Environment setup (Day 1–2)
+
+Use **Linux** (Ubuntu recommended).
+
+Install tools:
+
+```bash
+sudo apt update
+sudo apt install linux-tools-common linux-tools-generic linux-tools-$(uname -r)
+sudo apt install strace tcpdump iproute2
+```
+
+Python dependencies:
+
+```bash
+pip install flask requests grpcio grpcio-tools aioquic
+```
+
+Optional but useful:
+
+```
+wrk (HTTP load testing)
+FlameGraph tools
+```
+
+---
+
+# 4. Implement the baseline services
+
+All protocols should implement **the same operation**:
+
+```
+client sends "ping"
+server responds "pong"
+```
+
+This isolates network overhead.
+
+---
+
+## 4.1 Raw TCP (baseline)
+
+Server:
+
+* socket
+* accept
+* read
+* write
+
+Client:
+
+* send
+* receive
+* measure round-trip time
+
+Metrics:
+
+* latency
+* syscall count
+* CPU cycles
+
+---
+
+## 4.2 REST (HTTP/1.1)
+
+Use **Flask**.
+
+Server endpoint:
+
+```
+POST /echo
+```
+
+Client:
+
+```
+requests.post()
+```
+
+Payload example:
+
+```json
+{"msg":"ping"}
+```
+
+Measure:
+
+* JSON serialization
+* HTTP header overhead
+* TCP cost
+
+---
+
+## 4.3 RPC (gRPC)
+
+Define protobuf:
+
+```
+service Echo {
+  rpc Ping (Message) returns (Message);
+}
+```
+
+Measure:
+
+* protobuf serialization
+* HTTP/2 framing
+* multiplexing
+
+---
+
+## 4.4 QUIC (HTTP/3)
+
+Use **aioquic**.
+
+Measure:
+
+* connection setup latency
+* CPU cost
+* tail latency under packet loss
+
+---
+
+# 5. Design the experiments
+
+Each protocol should run under **identical conditions**.
+
+Keep these variables fixed:
+
+* payload size
+* request rate
+* machine
+* CPU governor
+
+---
+
+## Experiment 1 — baseline latency
+
+Measure round-trip latency.
+
+Output:
+
+* p50
+* p95
+* p99
+
+Plot **CDF curves**.
+
+---
+
+## Experiment 2 — throughput
+
+Increase concurrency.
+
+Measure:
+
+```
+requests/sec
+```
+
+---
+
+## Experiment 3 — CPU overhead
+
+Use:
+
+```bash
+perf stat
+```
+
+Example:
+
+```
+perf stat -e cycles,instructions,cs,syscalls ./client
+```
+
+Collect:
+
+* cycles
+* context switches
+* syscall count
+
+---
+
+## Experiment 4 — kernel vs user CPU
+
+Use flamegraphs:
+
+```
+perf record
+perf script
+```
+
+Observe:
+
+```
+tcp_sendmsg
+tcp_recvmsg
+protobuf parsing
+JSON parsing
+QUIC encryption
+```
+
+---
+
+## Experiment 5 — packet loss test
+
+Add artificial loss:
+
+```
+tc qdisc add dev lo root netem loss 1%
+```
+
+Test:
+
+* TCP stack
+* QUIC stack
+
+Observe tail latency.
+
+---
+
+# 6. Data you should collect
+
+Create tables like:
+
+| Stack | p50 | p99 | CPU cycles | syscalls |
+| ----- | --- | --- | ---------- | -------- |
+
+Also measure:
+
+| Metric           |
+| ---------------- |
+| latency          |
+| throughput       |
+| CPU              |
+| context switches |
+| syscall count    |
+
+---
+
+# 7. Data visualization
+
+Use Python:
+
+```
+matplotlib
+seaborn
+```
+
+Graphs to include:
+
+1️⃣ latency CDF
+2️⃣ throughput bar chart
+3️⃣ CPU usage comparison
+4️⃣ syscall count
+
+---
+
+# 8. Research paper structure
+
+Use **standard systems paper format**.
+
+---
+
+# Abstract (150–200 words)
+
+Include:
+
+* problem
+* approach
+* key findings
+
+Example structure:
+
+```
+Modern distributed systems rely on layered network protocols...
+We present a measurement-based study...
+Our results show...
+```
+
+---
+
+# 1 Introduction
+
+Explain:
+
+* microservices growth
+* protocol stack complexity
+* why overhead matters
+
+Then list **contributions**:
+
+Example:
+
+```
+• Empirical comparison of TCP, REST, RPC, and QUIC
+• Breakdown of kernel vs user-space overhead
+• Controlled microbenchmark framework
+```
+
+---
+
+# 2 Background
+
+Explain briefly:
+
+* TCP/IP stack
+* HTTP/1.1
+* HTTP/2
+* QUIC
+
+Keep it short.
+
+---
+
+# 3 Methodology
+
+Very important.
+
+Include:
+
+### Hardware
+
+CPU
+RAM
+OS version
+
+### Software
+
+Libraries
+Versions
+
+### Benchmark design
+
+* payload
+* iterations
+* concurrency
+
+---
+
+# 4 Experimental Results
+
+Sections:
+
+### Latency
+
+### Throughput
+
+### CPU overhead
+
+### Packet loss performance
+
+Each graph should be explained.
+
+---
+
+# 5 Analysis
+
+Explain **why results look like they do**.
+
+Examples:
+
+* REST slower due to JSON parsing
+* gRPC faster due to binary serialization
+* QUIC improves tail latency
+
+---
+
+# 6 Related Work
+
+You can search these papers.
+
+Search on **Google Scholar**.
+
+### Good starting papers
+
+**1**
+"On the Performance of Remote Procedure Call"
+
+**2**
+"The Cost of TCP/IP"
+
+**3**
+"QUIC: A UDP-Based Secure and Reliable Transport"
+
+**4**
+"A Performance Evaluation of QUIC"
+
+**5**
+"Kafka: A Distributed Messaging System for Log Processing"
+
+Even if Kafka is not used, it is related to messaging overhead.
+
+---
+
+# 7 Threats to Validity
+
+Mention limitations:
+
+* single machine
+* loopback network
+* specific implementations
+
+---
+
+# 8 Conclusion
+
+Summarize findings.
+
+Example:
+
+```
+This study shows how protocol stack design influences performance overhead...
+```
+
+---
+
+# 9 Reproducibility
+
+Include:
+
+* GitHub repo
+* scripts
+* configs
+
+---
+
+# 10 Suggested GitHub repo structure
+
+```
+network-stack-bench
+│
+├── tcp
+├── rest
+├── grpc
+├── quic
+├── scripts
+├── plots
+└── paper
+```
+
+---
+
+# 11 Timeline recommendation
+
+Week 1
+Implement protocols
+
+Week 2
+Run experiments
+
+Week 3
+Analyze results
+
+Week 4
+Write paper
+
+---
+
+# Final advice
+
+Your success depends on **three things**:
+
+1️⃣ identical test conditions
+2️⃣ explaining results clearly
+3️⃣ good graphs
+
+Coding is the **easy part**.
+
+---
+
+If you want, I can also show you the **exact minimal code architecture** (so all four stacks share the same benchmarking framework). That will make your experiments **much cleaner and easier to analyze.**
+ ^M9hfm5dN
+
 ## Embedded Files
 c65ca810f19f3fa8b38b99d4fcf05006dc92ced5: [[9f302bd091c90544027bd68c5dadd4aaa7f314246f6f595b032fccca09fa99fa.png]]
 
@@ -112,12 +639,116 @@ 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
 
-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
+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
 
-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
+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
 
-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
+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
 
-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
+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
 ```
 %%
