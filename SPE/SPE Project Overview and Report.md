@@ -12,6 +12,8 @@ I’ll update all 3 parts cleanly 👇
 
 **DevOps-Driven Distributed Order Processing System with Observability and Load Simulation**
 
+DS with OLS
+
 ---
 
 ## 🧱 Updated Architecture
