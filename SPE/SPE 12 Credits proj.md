@@ -29,6 +29,7 @@ You are building a pipeline that:
 - **enforces rules**
 - **blocks unsafe deployments**
 
+--------------------------------
 ## SAST — Static Application Security Testing
 
 👉 Checks **source code** without running it
@@ -41,6 +42,8 @@ You are building a pipeline that:
 ### Tool:
 
 - Semgrep
+
+--------------------------------
 
 ## SCA — Software Composition Analysis
 
