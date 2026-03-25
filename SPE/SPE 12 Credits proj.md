@@ -21,6 +21,9 @@
 
 **Great for:** DevOps / backend roles
 
+
+code testing, libraries testing, 
+
 ---
 
 ## 🟡 P10 – IaC Security Pipeline
