@@ -1,91 +1,73 @@
-**Title:**  
-Performance Evaluation of Distributed System Architectures under Varying Load Conditions
+
+## 🟡 P07 – DevSecOps Pipeline (OPA + Jenkins)
+
+**Requirements:**
+
+- Jenkins
+    
+- Basic security tools (SAST/DAST)
+    
+- Docker
+    
+
+**Difficulty:** ⭐⭐⭐⭐
+
+**Why good:**
+
+- Real-world relevant
+    
+- Clear deliverables
+    
+
+**Great for:** DevOps / backend roles
 
 ---
 
-### Description
+## 🟡 P10 – IaC Security Pipeline
 
-- This project evaluates how different system architectures behave under increasing load conditions.
+**Requirements:**
+
+- Terraform basics
     
-- The same application will be implemented in multiple designs:
+- CI/CD
     
-    - Monolithic system
-        
-    - Synchronous microservices system
-        
-    - Asynchronous queue-based system
-        
-- The application logic remains constant while only the architecture changes to ensure fair comparison.
+- Security tools
     
 
----
+**Difficulty:** ⭐⭐⭐⭐
 
-### System Implementation
+**Highlight:**
 
-- Services will be developed in Go.
-    
-- Communication between services will use HTTP.
-    
-- Asynchronous processing will be implemented using RabbitMQ and worker services.
-    
-- Data will be stored in PostgreSQL, with optional Redis caching.
-    
-- Nginx will be used as API Gateway and Kubernetes Ingress for load balancing.
-    
-- All components will be containerized using Docker and managed using Docker Compose for local setup.
-    
-- Deployment and scaling will be handled using Kubernetes.
-    
-
----
-
-### Load Testing
-
-- Load will be generated using k6.
-    
-- Traffic levels will be gradually increased (e.g., 100, 1,000, 10,000+ requests per second).
+- Scoring model = research angle
     
 
 ---
 
-### Monitoring and Logging
+## 🟡 P15 – Container Runtime Comparison
 
-- Prometheus will collect system metrics.
+**Requirements:**
+
+- Docker/Podman/containerd
     
-- Grafana will be used to visualize performance data.
-    
-- ELK stack will be used for centralized logging.
+- Benchmarking + stats
     
 
----
+**Difficulty:** ⭐⭐⭐⭐
 
-### Metrics Evaluated
+**Why strong:**
 
-- Latency
-    
-- Throughput
-    
-- Error rate
-    
-- CPU and memory usage
-    
-- Queue length and processing delay
+- Clear evaluation → easy paper
     
 
 ---
 
-### Objective
+## 🟡 P16 – cgroups Resource Isolation
 
-- To compare different architectural designs and analyze how asynchronous processing, caching, and scaling improve system performance and resilience under high load.
+**Requirements:**
+
+- Linux internals (not kernel coding)
+    
+- Benchmarking
     
 
----
-
-### Outcome
-
-- A comparative analysis of system architectures based on performance metrics.
-    
-- Insights into how design choices impact scalability and reliability in distributed systems.
-    
-
----
+**Difficulty:** ⭐⭐⭐⭐
