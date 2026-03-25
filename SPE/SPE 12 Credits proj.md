@@ -20,13 +20,42 @@
     
 
 **Great for:** DevOps / backend roles
----
 
+
+--------------------------------
 You are building a pipeline that:
 
 - **automatically scans code for vulnerabilities**
 - **enforces rules**
 - **blocks unsafe deployments**
+
+## SAST — Static Application Security Testing
+
+👉 Checks **source code** without running it
+
+### Example:
+
+- SQL injection risk
+- Hardcoded secrets
+
+### Tool:
+
+- Semgrep
+
+## SCA — Software Composition Analysis
+
+👉 Checks **libraries/dependencies**
+
+### Example:
+
+- Using vulnerable version of log4j
+
+### Tool:
+
+- OWASP Dependency Check
+
+
+--------------------------------
 
 ---
 
