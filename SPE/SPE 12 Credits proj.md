@@ -20,6 +20,13 @@
     
 
 **Great for:** DevOps / backend roles
+---
+
+You are building a pipeline that:
+
+- **automatically scans code for vulnerabilities**
+- **enforces rules**
+- **blocks unsafe deployments**
 
 ---
 
