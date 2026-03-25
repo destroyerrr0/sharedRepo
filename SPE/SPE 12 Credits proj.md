@@ -22,7 +22,7 @@
 **Great for:** DevOps / backend roles
 
 
-code testing, libraries testing, 
+code testing, libraries testing, api testing
 
 ---
 
