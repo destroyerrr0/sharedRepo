@@ -21,3 +21,10 @@
 ![[Pasted image 20260326162509.png]]
 ![[Pasted image 20260326162530.png]]
 ![[Pasted image 20260326162539.png]]
+
+## 13 (2/2)
+![[Pasted image 20260326162548.png]]
+![[Pasted image 20260326162612.png]]
+
+
+# Final (13/16)
